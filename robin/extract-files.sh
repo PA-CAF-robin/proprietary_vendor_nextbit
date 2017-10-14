@@ -17,15 +17,14 @@
 
 set -e
 
-# Required!
-DEVICE=ether
-VENDOR=nextbit
+DEVICE=nextbit
+VENDOR=robin
 
 # Load extractutils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "$MY_DIR" ]]; then MY_DIR="$PWD"; fi
 
-CM_ROOT=.
+CM_ROOT="$MY_DIR"/../../..
 
 HELPER=extract_utils.sh
 if [ ! -f "$HELPER" ]; then
@@ -34,19 +33,27 @@ if [ ! -f "$HELPER" ]; then
 fi
 . "$HELPER"
 
+if [ $# -eq 0 ]; then
+  SRC=adb
+else
+  if [ $# -eq 1 ]; then
+    SRC=$1
+  else
+    echo "$0: bad number of arguments"
+    echo ""
+    echo "usage: $0 [PATH_TO_EXPANDED_ROM]"
+    echo ""
+    echo "If PATH_TO_EXPANDED_ROM is not specified, blobs will be extracted from"
+    echo "the device using adb pull."
+    exit 1
+  fi
+fi
+
 # Initialize the helper
 setup_vendor "$DEVICE" "$VENDOR" "$CM_ROOT"
 
-# Copyright headers and guards
-write_headers
+#extract "$MY_DIR"/proprietary-files-qc.txt "$SRC"
+#extract "$MY_DIR"/proprietary-files-qc-perf.txt "$SRC"
+extract "$MY_DIR"/proprietary-files.txt "$SRC"
 
-# The standard blobs
-write_makefiles "$MY_DIR"/proprietary-files.txt
-
-#\$(shell mkdir -p \$(PRODUCT_OUT)/system/vendor/lib/egl && pushd \$(PRODUCT_OUT)/system/vendor/lib > /dev/null && ln -s egl/libEGL_adreno.so libEGL_adreno.so && popd > /dev/null)
-#\$(shell mkdir -p \$(PRODUCT_OUT)/system/vendor/lib64/egl && pushd \$(PRODUCT_OUT)/system/vendor/lib64 > /dev/null && ln -s egl/libEGL_adreno.so libEGL_adreno.so && popd > /dev/null)
-#EOF
-
-# We are done!
-write_footers
-
+"$MY_DIR"/setup-makefiles.sh
