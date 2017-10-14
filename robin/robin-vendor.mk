@@ -21,10 +21,10 @@ PRODUCT_COPY_FILES += \
     vendor/nextbit/robin/proprietary/bin/dpmd:system/bin/dpmd \
     vendor/nextbit/robin/proprietary/bin/energy-awareness:system/bin/energy-awareness \
     vendor/nextbit/robin/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
-    vendor/nextbit/robin/proprietary/bin/ims_rtp_daemon:system/bin/ims_rtp_daemon \
     vendor/nextbit/robin/proprietary/bin/imscmservice:system/bin/imscmservice \
     vendor/nextbit/robin/proprietary/bin/imsdatadaemon:system/bin/imsdatadaemon \
     vendor/nextbit/robin/proprietary/bin/imsqmidaemon:system/bin/imsqmidaemon \
+    vendor/nextbit/robin/proprietary/bin/ims_rtp_daemon:system/bin/ims_rtp_daemon \
     vendor/nextbit/robin/proprietary/bin/ipacm-diag:system/bin/ipacm-diag \
     vendor/nextbit/robin/proprietary/bin/irsc_util:system/bin/irsc_util \
     vendor/nextbit/robin/proprietary/bin/loc_launcher:system/bin/loc_launcher \
@@ -43,16 +43,13 @@ PRODUCT_COPY_FILES += \
     vendor/nextbit/robin/proprietary/bin/sensors.qcom:system/bin/sensors.qcom \
     vendor/nextbit/robin/proprietary/bin/time_daemon:system/bin/time_daemon \
     vendor/nextbit/robin/proprietary/bin/wcnss_filter:system/bin/wcnss_filter \
-    vendor/nextbit/robin/proprietary/etc/cne/SwimConfig.xml:system/etc/cne/SwimConfig.xml \
     vendor/nextbit/robin/proprietary/etc/cne/andsfCne.xml:system/etc/cne/andsfCne.xml \
+    vendor/nextbit/robin/proprietary/etc/cne/SwimConfig.xml:system/etc/cne/SwimConfig.xml \
     vendor/nextbit/robin/proprietary/etc/data/dsi_config.xml:system/etc/data/dsi_config.xml \
     vendor/nextbit/robin/proprietary/etc/data/netmgr_config.xml:system/etc/data/netmgr_config.xml \
     vendor/nextbit/robin/proprietary/etc/data/qmi_config.xml:system/etc/data/qmi_config.xml \
     vendor/nextbit/robin/proprietary/etc/dpm/dpm.conf:system/etc/dpm/dpm.conf \
     vendor/nextbit/robin/proprietary/etc/dpm/nsrm/NsrmConfiguration.xml:system/etc/dpm/nsrm/NsrmConfiguration.xml \
-    vendor/nextbit/robin/proprietary/etc/firmware/TP_Firmware_nbq_ebbg.img:system/etc/firmware/TP_Firmware_nbq_ebbg.img \
-    vendor/nextbit/robin/proprietary/etc/firmware/TP_Firmware_nbq_ebbg_V29.img:system/etc/firmware/TP_Firmware_nbq_ebbg_V29.img \
-    vendor/nextbit/robin/proprietary/etc/firmware/TP_Firmware_nbq_ebbg_V35.img:system/etc/firmware/TP_Firmware_nbq_ebbg_V35.img \
     vendor/nextbit/robin/proprietary/etc/firmware/a420_pfp.fw:system/etc/firmware/a420_pfp.fw \
     vendor/nextbit/robin/proprietary/etc/firmware/a420_pm4.fw:system/etc/firmware/a420_pm4.fw \
     vendor/nextbit/robin/proprietary/etc/firmware/cpp_firmware_v1_1_1.fw:system/etc/firmware/cpp_firmware_v1_1_1.fw \
@@ -61,6 +58,9 @@ PRODUCT_COPY_FILES += \
     vendor/nextbit/robin/proprietary/etc/firmware/cpp_firmware_v1_4_0.fw:system/etc/firmware/cpp_firmware_v1_4_0.fw \
     vendor/nextbit/robin/proprietary/etc/firmware/cpp_firmware_v1_6_0.fw:system/etc/firmware/cpp_firmware_v1_6_0.fw \
     vendor/nextbit/robin/proprietary/etc/firmware/cpp_firmware_v1_8_0.fw:system/etc/firmware/cpp_firmware_v1_8_0.fw \
+    vendor/nextbit/robin/proprietary/etc/firmware/TP_Firmware_nbq_ebbg.img:system/etc/firmware/TP_Firmware_nbq_ebbg.img \
+    vendor/nextbit/robin/proprietary/etc/firmware/TP_Firmware_nbq_ebbg_V29.img:system/etc/firmware/TP_Firmware_nbq_ebbg_V29.img \
+    vendor/nextbit/robin/proprietary/etc/firmware/TP_Firmware_nbq_ebbg_V35.img:system/etc/firmware/TP_Firmware_nbq_ebbg_V35.img \
     vendor/nextbit/robin/proprietary/etc/firmware/venus.b00:system/etc/firmware/venus.b00 \
     vendor/nextbit/robin/proprietary/etc/firmware/venus.b01:system/etc/firmware/venus.b01 \
     vendor/nextbit/robin/proprietary/etc/firmware/venus.b02:system/etc/firmware/venus.b02 \
@@ -84,40 +84,40 @@ PRODUCT_COPY_FILES += \
     vendor/nextbit/robin/proprietary/etc/nxp/settings/os/keytone/3/HQ_KS_13X18_DUMBO.preset:system/etc/nxp/settings/os/keytone/3/HQ_KS_13X18_DUMBO.preset \
     vendor/nextbit/robin/proprietary/etc/nxp/settings/os/keytone/4/HQ_KS_13X18_DUMBO.eq:system/etc/nxp/settings/os/keytone/4/HQ_KS_13X18_DUMBO.eq \
     vendor/nextbit/robin/proprietary/etc/nxp/settings/os/keytone/4/HQ_KS_13X18_DUMBO.preset:system/etc/nxp/settings/os/keytone/4/HQ_KS_13X18_DUMBO.preset \
-    vendor/nextbit/robin/proprietary/etc/nxp/settings/os/playback/1/HQ_KS_13X18_DUMBO.eq:system/etc/nxp/settings/os/playback/1/HQ_KS_13X18_DUMBO.eq \
-    vendor/nextbit/robin/proprietary/etc/nxp/settings/os/playback/1/HQ_KS_13X18_DUMBO.preset:system/etc/nxp/settings/os/playback/1/HQ_KS_13X18_DUMBO.preset \
-    vendor/nextbit/robin/proprietary/etc/nxp/settings/os/playback/1/TFA9887_N1D2.config:system/etc/nxp/settings/os/playback/1/TFA9887_N1D2.config \
-    vendor/nextbit/robin/proprietary/etc/nxp/settings/os/playback/1/TFA9887_N1D2_2_4_1.patch:system/etc/nxp/settings/os/playback/1/TFA9887_N1D2_2_4_1.patch \
     vendor/nextbit/robin/proprietary/etc/nxp/settings/os/playback/1/coldboot.patch:system/etc/nxp/settings/os/playback/1/coldboot.patch \
     vendor/nextbit/robin/proprietary/etc/nxp/settings/os/playback/1/devkit_Release.parms:system/etc/nxp/settings/os/playback/1/devkit_Release.parms \
+    vendor/nextbit/robin/proprietary/etc/nxp/settings/os/playback/1/HQ_KS_13X18_DUMBO.eq:system/etc/nxp/settings/os/playback/1/HQ_KS_13X18_DUMBO.eq \
+    vendor/nextbit/robin/proprietary/etc/nxp/settings/os/playback/1/HQ_KS_13X18_DUMBO.preset:system/etc/nxp/settings/os/playback/1/HQ_KS_13X18_DUMBO.preset \
     vendor/nextbit/robin/proprietary/etc/nxp/settings/os/playback/1/speaker.speaker:system/etc/nxp/settings/os/playback/1/speaker.speaker \
-    vendor/nextbit/robin/proprietary/etc/nxp/settings/os/playback/2/HQ_KS_13X18_DUMBO.eq:system/etc/nxp/settings/os/playback/2/HQ_KS_13X18_DUMBO.eq \
-    vendor/nextbit/robin/proprietary/etc/nxp/settings/os/playback/2/HQ_KS_13X18_DUMBO.preset:system/etc/nxp/settings/os/playback/2/HQ_KS_13X18_DUMBO.preset \
-    vendor/nextbit/robin/proprietary/etc/nxp/settings/os/playback/2/TFA9887_N1D2.config:system/etc/nxp/settings/os/playback/2/TFA9887_N1D2.config \
-    vendor/nextbit/robin/proprietary/etc/nxp/settings/os/playback/2/TFA9887_N1D2_2_4_1.patch:system/etc/nxp/settings/os/playback/2/TFA9887_N1D2_2_4_1.patch \
+    vendor/nextbit/robin/proprietary/etc/nxp/settings/os/playback/1/TFA9887_N1D2_2_4_1.patch:system/etc/nxp/settings/os/playback/1/TFA9887_N1D2_2_4_1.patch \
+    vendor/nextbit/robin/proprietary/etc/nxp/settings/os/playback/1/TFA9887_N1D2.config:system/etc/nxp/settings/os/playback/1/TFA9887_N1D2.config \
     vendor/nextbit/robin/proprietary/etc/nxp/settings/os/playback/2/coldboot.patch:system/etc/nxp/settings/os/playback/2/coldboot.patch \
     vendor/nextbit/robin/proprietary/etc/nxp/settings/os/playback/2/devkit_Release.parms:system/etc/nxp/settings/os/playback/2/devkit_Release.parms \
+    vendor/nextbit/robin/proprietary/etc/nxp/settings/os/playback/2/HQ_KS_13X18_DUMBO.eq:system/etc/nxp/settings/os/playback/2/HQ_KS_13X18_DUMBO.eq \
+    vendor/nextbit/robin/proprietary/etc/nxp/settings/os/playback/2/HQ_KS_13X18_DUMBO.preset:system/etc/nxp/settings/os/playback/2/HQ_KS_13X18_DUMBO.preset \
     vendor/nextbit/robin/proprietary/etc/nxp/settings/os/playback/2/speaker.speaker:system/etc/nxp/settings/os/playback/2/speaker.speaker \
-    vendor/nextbit/robin/proprietary/etc/nxp/settings/os/playback/3/HQ_KS_13X18_DUMBO.eq:system/etc/nxp/settings/os/playback/3/HQ_KS_13X18_DUMBO.eq \
-    vendor/nextbit/robin/proprietary/etc/nxp/settings/os/playback/3/HQ_KS_13X18_DUMBO.preset:system/etc/nxp/settings/os/playback/3/HQ_KS_13X18_DUMBO.preset \
-    vendor/nextbit/robin/proprietary/etc/nxp/settings/os/playback/3/TFA9887_N1D2.config:system/etc/nxp/settings/os/playback/3/TFA9887_N1D2.config \
-    vendor/nextbit/robin/proprietary/etc/nxp/settings/os/playback/3/TFA9887_N1D2_2_4_1.patch:system/etc/nxp/settings/os/playback/3/TFA9887_N1D2_2_4_1.patch \
+    vendor/nextbit/robin/proprietary/etc/nxp/settings/os/playback/2/TFA9887_N1D2_2_4_1.patch:system/etc/nxp/settings/os/playback/2/TFA9887_N1D2_2_4_1.patch \
+    vendor/nextbit/robin/proprietary/etc/nxp/settings/os/playback/2/TFA9887_N1D2.config:system/etc/nxp/settings/os/playback/2/TFA9887_N1D2.config \
     vendor/nextbit/robin/proprietary/etc/nxp/settings/os/playback/3/coldboot.patch:system/etc/nxp/settings/os/playback/3/coldboot.patch \
     vendor/nextbit/robin/proprietary/etc/nxp/settings/os/playback/3/devkit_Release.parms:system/etc/nxp/settings/os/playback/3/devkit_Release.parms \
+    vendor/nextbit/robin/proprietary/etc/nxp/settings/os/playback/3/HQ_KS_13X18_DUMBO.eq:system/etc/nxp/settings/os/playback/3/HQ_KS_13X18_DUMBO.eq \
+    vendor/nextbit/robin/proprietary/etc/nxp/settings/os/playback/3/HQ_KS_13X18_DUMBO.preset:system/etc/nxp/settings/os/playback/3/HQ_KS_13X18_DUMBO.preset \
     vendor/nextbit/robin/proprietary/etc/nxp/settings/os/playback/3/speaker.speaker:system/etc/nxp/settings/os/playback/3/speaker.speaker \
-    vendor/nextbit/robin/proprietary/etc/nxp/settings/os/playback/4/HQ_KS_13X18_DUMBO.eq:system/etc/nxp/settings/os/playback/4/HQ_KS_13X18_DUMBO.eq \
-    vendor/nextbit/robin/proprietary/etc/nxp/settings/os/playback/4/HQ_KS_13X18_DUMBO.preset:system/etc/nxp/settings/os/playback/4/HQ_KS_13X18_DUMBO.preset \
-    vendor/nextbit/robin/proprietary/etc/nxp/settings/os/playback/4/TFA9887_N1D2.config:system/etc/nxp/settings/os/playback/4/TFA9887_N1D2.config \
-    vendor/nextbit/robin/proprietary/etc/nxp/settings/os/playback/4/TFA9887_N1D2_2_4_1.patch:system/etc/nxp/settings/os/playback/4/TFA9887_N1D2_2_4_1.patch \
+    vendor/nextbit/robin/proprietary/etc/nxp/settings/os/playback/3/TFA9887_N1D2_2_4_1.patch:system/etc/nxp/settings/os/playback/3/TFA9887_N1D2_2_4_1.patch \
+    vendor/nextbit/robin/proprietary/etc/nxp/settings/os/playback/3/TFA9887_N1D2.config:system/etc/nxp/settings/os/playback/3/TFA9887_N1D2.config \
     vendor/nextbit/robin/proprietary/etc/nxp/settings/os/playback/4/coldboot.patch:system/etc/nxp/settings/os/playback/4/coldboot.patch \
     vendor/nextbit/robin/proprietary/etc/nxp/settings/os/playback/4/devkit_Release.parms:system/etc/nxp/settings/os/playback/4/devkit_Release.parms \
+    vendor/nextbit/robin/proprietary/etc/nxp/settings/os/playback/4/HQ_KS_13X18_DUMBO.eq:system/etc/nxp/settings/os/playback/4/HQ_KS_13X18_DUMBO.eq \
+    vendor/nextbit/robin/proprietary/etc/nxp/settings/os/playback/4/HQ_KS_13X18_DUMBO.preset:system/etc/nxp/settings/os/playback/4/HQ_KS_13X18_DUMBO.preset \
     vendor/nextbit/robin/proprietary/etc/nxp/settings/os/playback/4/speaker.speaker:system/etc/nxp/settings/os/playback/4/speaker.speaker \
-    vendor/nextbit/robin/proprietary/etc/permissions/ConnectivityExt.xml:system/etc/permissions/ConnectivityExt.xml \
+    vendor/nextbit/robin/proprietary/etc/nxp/settings/os/playback/4/TFA9887_N1D2_2_4_1.patch:system/etc/nxp/settings/os/playback/4/TFA9887_N1D2_2_4_1.patch \
+    vendor/nextbit/robin/proprietary/etc/nxp/settings/os/playback/4/TFA9887_N1D2.config:system/etc/nxp/settings/os/playback/4/TFA9887_N1D2.config \
     vendor/nextbit/robin/proprietary/etc/permissions/cneapiclient.xml:system/etc/permissions/cneapiclient.xml \
     vendor/nextbit/robin/proprietary/etc/permissions/com.qti.dpmframework.xml:system/etc/permissions/com.qti.dpmframework.xml \
     vendor/nextbit/robin/proprietary/etc/permissions/com.qti.location.sdk.xml:system/etc/permissions/com.qti.location.sdk.xml \
     vendor/nextbit/robin/proprietary/etc/permissions/com.qualcomm.location.xml:system/etc/permissions/com.qualcomm.location.xml \
     vendor/nextbit/robin/proprietary/etc/permissions/com.quicinc.cne.xml:system/etc/permissions/com.quicinc.cne.xml \
+    vendor/nextbit/robin/proprietary/etc/permissions/ConnectivityExt.xml:system/etc/permissions/ConnectivityExt.xml \
     vendor/nextbit/robin/proprietary/etc/permissions/dpmapi.xml:system/etc/permissions/dpmapi.xml \
     vendor/nextbit/robin/proprietary/etc/permissions/qcnvitems.xml:system/etc/permissions/qcnvitems.xml \
     vendor/nextbit/robin/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
@@ -128,15 +128,25 @@ PRODUCT_COPY_FILES += \
     vendor/nextbit/robin/proprietary/etc/sensors/sensor_def_qcomdev.conf:system/etc/sensors/sensor_def_qcomdev.conf \
     vendor/nextbit/robin/proprietary/etc/sensors/sensor_fih_def_nbq_EVT1C_qcomdev.conf:system/etc/sensors/sensor_fih_def_nbq_EVT1C_qcomdev.conf \
     vendor/nextbit/robin/proprietary/etc/sensors/sensor_fih_def_nbq_qcomdev.conf:system/etc/sensors/sensor_fih_def_nbq_qcomdev.conf \
-    vendor/nextbit/robin/proprietary/framework/ConnectivityExt.jar:system/framework/ConnectivityExt.jar \
-    vendor/nextbit/robin/proprietary/framework/QtiTelephonyServicelibrary.jar:system/framework/QtiTelephonyServicelibrary.jar \
     vendor/nextbit/robin/proprietary/framework/cneapiclient.jar:system/framework/cneapiclient.jar \
     vendor/nextbit/robin/proprietary/framework/com.qti.dpmframework.jar:system/framework/com.qti.dpmframework.jar \
     vendor/nextbit/robin/proprietary/framework/com.qti.location.sdk.jar:system/framework/com.qti.location.sdk.jar \
     vendor/nextbit/robin/proprietary/framework/com.quicinc.cne.jar:system/framework/com.quicinc.cne.jar \
+    vendor/nextbit/robin/proprietary/framework/ConnectivityExt.jar:system/framework/ConnectivityExt.jar \
     vendor/nextbit/robin/proprietary/framework/dpmapi.jar:system/framework/dpmapi.jar \
     vendor/nextbit/robin/proprietary/framework/qti-telephony-common.jar:system/framework/qti-telephony-common.jar \
+    vendor/nextbit/robin/proprietary/framework/QtiTelephonyServicelibrary.jar:system/framework/QtiTelephonyServicelibrary.jar \
     vendor/nextbit/robin/proprietary/framework/tcmclient.jar:system/framework/tcmclient.jar \
+    vendor/nextbit/robin/proprietary/lib64/hw/fingerprint.msm8992.so:system/lib64/hw/fingerprint.msm8992.so \
+    vendor/nextbit/robin/proprietary/lib64/hw/gps.default.so:system/lib64/hw/gps.default.so \
+    vendor/nextbit/robin/proprietary/lib64/hw/sensors.msm8992.so:system/lib64/hw/sensors.msm8992.so \
+    vendor/nextbit/robin/proprietary/lib64/libFIHNxp.so:system/lib64/libFIHNxp.so \
+    vendor/nextbit/robin/proprietary/lib64/lib_fpc_tac_shared.so:system/lib64/lib_fpc_tac_shared.so \
+    vendor/nextbit/robin/proprietary/lib64/libgps.utils.so:system/lib64/libgps.utils.so \
+    vendor/nextbit/robin/proprietary/lib64/libloc_core.so:system/lib64/libloc_core.so \
+    vendor/nextbit/robin/proprietary/lib64/libloc_eng.so:system/lib64/libloc_eng.so \
+    vendor/nextbit/robin/proprietary/lib64/libtfa98xx_hal.so:system/lib64/libtfa98xx_hal.so \
+    vendor/nextbit/robin/proprietary/lib64/libtfa98xx.so:system/lib64/libtfa98xx.so \
     vendor/nextbit/robin/proprietary/lib/hw/camera.msm8992.so:system/lib/hw/camera.msm8992.so \
     vendor/nextbit/robin/proprietary/lib/hw/fingerprint.msm8992.so:system/lib/hw/fingerprint.msm8992.so \
     vendor/nextbit/robin/proprietary/lib/hw/gps.default.so:system/lib/hw/gps.default.so \
@@ -146,24 +156,14 @@ PRODUCT_COPY_FILES += \
     vendor/nextbit/robin/proprietary/lib/libgps.utils.so:system/lib/libgps.utils.so \
     vendor/nextbit/robin/proprietary/lib/libloc_core.so:system/lib/libloc_core.so \
     vendor/nextbit/robin/proprietary/lib/libloc_eng.so:system/lib/libloc_eng.so \
-    vendor/nextbit/robin/proprietary/lib/libmm-qcamera.so:system/lib/libmm-qcamera.so \
     vendor/nextbit/robin/proprietary/lib/libmmcamera_interface.so:system/lib/libmmcamera_interface.so \
     vendor/nextbit/robin/proprietary/lib/libmmjpeg_interface.so:system/lib/libmmjpeg_interface.so \
+    vendor/nextbit/robin/proprietary/lib/libmm-qcamera.so:system/lib/libmm-qcamera.so \
     vendor/nextbit/robin/proprietary/lib/libmorpho_image_stab4.so:system/lib/libmorpho_image_stab4.so \
     vendor/nextbit/robin/proprietary/lib/libmorpho_movie_stab4.so:system/lib/libmorpho_movie_stab4.so \
     vendor/nextbit/robin/proprietary/lib/libqomx_core.so:system/lib/libqomx_core.so \
-    vendor/nextbit/robin/proprietary/lib/libtfa98xx.so:system/lib/libtfa98xx.so \
     vendor/nextbit/robin/proprietary/lib/libtfa98xx_hal.so:system/lib/libtfa98xx_hal.so \
-    vendor/nextbit/robin/proprietary/lib64/hw/fingerprint.msm8992.so:system/lib64/hw/fingerprint.msm8992.so \
-    vendor/nextbit/robin/proprietary/lib64/hw/gps.default.so:system/lib64/hw/gps.default.so \
-    vendor/nextbit/robin/proprietary/lib64/hw/sensors.msm8992.so:system/lib64/hw/sensors.msm8992.so \
-    vendor/nextbit/robin/proprietary/lib64/libFIHNxp.so:system/lib64/libFIHNxp.so \
-    vendor/nextbit/robin/proprietary/lib64/lib_fpc_tac_shared.so:system/lib64/lib_fpc_tac_shared.so \
-    vendor/nextbit/robin/proprietary/lib64/libgps.utils.so:system/lib64/libgps.utils.so \
-    vendor/nextbit/robin/proprietary/lib64/libloc_core.so:system/lib64/libloc_core.so \
-    vendor/nextbit/robin/proprietary/lib64/libloc_eng.so:system/lib64/libloc_eng.so \
-    vendor/nextbit/robin/proprietary/lib64/libtfa98xx.so:system/lib64/libtfa98xx.so \
-    vendor/nextbit/robin/proprietary/lib64/libtfa98xx_hal.so:system/lib64/libtfa98xx_hal.so \
+    vendor/nextbit/robin/proprietary/lib/libtfa98xx.so:system/lib/libtfa98xx.so \
     vendor/nextbit/robin/proprietary/vendor/bin/perfd:system/vendor/bin/perfd \
     vendor/nextbit/robin/proprietary/vendor/bin/qti:system/vendor/bin/qti \
     vendor/nextbit/robin/proprietary/vendor/bin/slim_daemon:system/vendor/bin/slim_daemon \
@@ -180,6 +180,128 @@ PRODUCT_COPY_FILES += \
     vendor/nextbit/robin/proprietary/vendor/firmware/fpctzappfingerprint.b03:system/vendor/firmware/fpctzappfingerprint.b03 \
     vendor/nextbit/robin/proprietary/vendor/firmware/fpctzappfingerprint.mdt:system/vendor/firmware/fpctzappfingerprint.mdt \
     vendor/nextbit/robin/proprietary/vendor/firmware/libpn547_fw.so:system/vendor/firmware/libpn547_fw.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/egl/eglSubDriverAndroid.so:system/vendor/lib64/egl/eglSubDriverAndroid.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/egl/libEGL_adreno.so:system/vendor/lib64/egl/libEGL_adreno.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/egl/libGLESv1_CM_adreno.so:system/vendor/lib64/egl/libGLESv1_CM_adreno.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/egl/libGLESv2_adreno.so:system/vendor/lib64/egl/libGLESv2_adreno.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/egl/libq3dtools_adreno.so:system/vendor/lib64/egl/libq3dtools_adreno.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/hw/activity_recognition.msm8992.so:system/vendor/lib64/hw/activity_recognition.msm8992.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/hw/flp.default.so:system/vendor/lib64/hw/flp.default.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/hw/gatekeeper.msm8992.so:system/vendor/lib64/hw/gatekeeper.msm8992.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/hw/keystore.msm8992.so:system/vendor/lib64/hw/keystore.msm8992.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/libacdb-fts.so:system/vendor/lib64/libacdb-fts.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/libacdbloader.so:system/vendor/lib64/libacdbloader.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/libacdbrtac.so:system/vendor/lib64/libacdbrtac.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/libadiertac.so:system/vendor/lib64/libadiertac.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/libadreno_utils.so:system/vendor/lib64/libadreno_utils.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/libadsprpc.so:system/vendor/lib64/libadsprpc.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/libalarmservice_jni.so:system/vendor/lib64/libalarmservice_jni.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/libaudcal.so:system/vendor/lib64/libaudcal.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/libbccQTI.so:system/vendor/lib64/libbccQTI.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/libbtnv.so:system/vendor/lib64/libbtnv.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/libC2D2.so:system/vendor/lib64/libC2D2.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/libc2d30-a4xx.so:system/vendor/lib64/libc2d30-a4xx.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/libCB.so:system/vendor/lib64/libCB.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/libcneapiclient.so:system/vendor/lib64/libcneapiclient.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/libcneqmiutils.so:system/vendor/lib64/libcneqmiutils.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/libcne.so:system/vendor/lib64/libcne.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/libconfigdb.so:system/vendor/lib64/libconfigdb.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/libconnctrl.so:system/vendor/lib64/libconnctrl.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/libdataitems.so:system/vendor/lib64/libdataitems.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/libdiag.so:system/vendor/lib64/libdiag.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/libdisp-aba.so:system/vendor/lib64/libdisp-aba.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/lib-dplmedia.so:system/vendor/lib64/lib-dplmedia.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/libdpmctmgr.so:system/vendor/lib64/libdpmctmgr.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/libdpmfdmgr.so:system/vendor/lib64/libdpmfdmgr.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/libdpmframework.so:system/vendor/lib64/libdpmframework.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/libdpmnsrm.so:system/vendor/lib64/libdpmnsrm.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/libdpmtcm.so:system/vendor/lib64/libdpmtcm.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/libdrmfs.so:system/vendor/lib64/libdrmfs.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/libdrmtime.so:system/vendor/lib64/libdrmtime.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/libdsi_netctrl.so:system/vendor/lib64/libdsi_netctrl.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/libdsutils.so:system/vendor/lib64/libdsutils.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/libflp.so:system/vendor/lib64/libflp.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/libgeofence.so:system/vendor/lib64/libgeofence.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/libgsl.so:system/vendor/lib64/libgsl.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/libidl.so:system/vendor/lib64/libidl.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/libimscamera_jni.so:system/vendor/lib64/libimscamera_jni.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/lib-imscamera.so:system/vendor/lib64/lib-imscamera.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/lib-imsdpl.so:system/vendor/lib64/lib-imsdpl.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/libimsmedia_jni.so:system/vendor/lib64/libimsmedia_jni.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/lib-imsqimf.so:system/vendor/lib64/lib-imsqimf.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/lib-imsrcscmclient.so:system/vendor/lib64/lib-imsrcscmclient.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/lib-ims-rcscmjni.so:system/vendor/lib64/lib-ims-rcscmjni.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/lib-imsrcscmservice.so:system/vendor/lib64/lib-imsrcscmservice.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/lib-imsrcscm.so:system/vendor/lib64/lib-imsrcscm.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/lib-imsrcs.so:system/vendor/lib64/lib-imsrcs.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/lib-imsSDP.so:system/vendor/lib64/lib-imsSDP.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/lib-imss.so:system/vendor/lib64/lib-imss.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/lib-imsvt.so:system/vendor/lib64/lib-imsvt.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/lib-imsxml.so:system/vendor/lib64/lib-imsxml.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/libizat_core.so:system/vendor/lib64/libizat_core.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/liblbs_core.so:system/vendor/lib64/liblbs_core.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/libllvm-glnext.so:system/vendor/lib64/libllvm-glnext.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/libllvm-qcom.so:system/vendor/lib64/libllvm-qcom.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/liblocationservice_glue.so:system/vendor/lib64/liblocationservice_glue.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/liblocationservice.so:system/vendor/lib64/liblocationservice.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/liblowi_client.so:system/vendor/lib64/liblowi_client.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/liblowi_wifihal.so:system/vendor/lib64/liblowi_wifihal.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/liblqe.so:system/vendor/lib64/liblqe.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/libmdmdetect.so:system/vendor/lib64/libmdmdetect.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/libmm-abl-oem.so:system/vendor/lib64/libmm-abl-oem.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/libmm-abl.so:system/vendor/lib64/libmm-abl.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/libmm-als.so:system/vendor/lib64/libmm-als.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/libmm-qdcm.so:system/vendor/lib64/libmm-qdcm.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/libnetmgr.so:system/vendor/lib64/libnetmgr.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/libperipheral_client.so:system/vendor/lib64/libperipheral_client.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/libqcci_legacy.so:system/vendor/lib64/libqcci_legacy.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/libqcmaputils.so:system/vendor/lib64/libqcmaputils.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/libqdi.so:system/vendor/lib64/libqdi.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/libqdp.so:system/vendor/lib64/libqdp.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/libqmi_cci.so:system/vendor/lib64/libqmi_cci.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/libqmi_client_helper.so:system/vendor/lib64/libqmi_client_helper.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/libqmi_client_qmux.so:system/vendor/lib64/libqmi_client_qmux.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/libqmi_common_so.so:system/vendor/lib64/libqmi_common_so.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/libqmi_csi.so:system/vendor/lib64/libqmi_csi.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/libqmi_encdec.so:system/vendor/lib64/libqmi_encdec.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/libqmi.so:system/vendor/lib64/libqmi.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/libQSEEComAPI.so:system/vendor/lib64/libQSEEComAPI.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/libqti-perfd-client.so:system/vendor/lib64/libqti-perfd-client.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/libQtiTether.so:system/vendor/lib64/libQtiTether.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/libquipc_os_api.so:system/vendor/lib64/libquipc_os_api.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/librcc.so:system/vendor/lib64/librcc.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/lib-rcsimssjni.so:system/vendor/lib64/lib-rcsimssjni.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/libril-qc-ltedirectdisc.so:system/vendor/lib64/libril-qc-ltedirectdisc.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/libril-qc-qmi-1.so:system/vendor/lib64/libril-qc-qmi-1.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/libril-qc-radioconfig.so:system/vendor/lib64/libril-qc-radioconfig.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/libril-qcril-hook-oem.so:system/vendor/lib64/libril-qcril-hook-oem.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/librilqmiservices.so:system/vendor/lib64/librilqmiservices.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/librpmb.so:system/vendor/lib64/librpmb.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/librs_adreno_sha1.so:system/vendor/lib64/librs_adreno_sha1.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/librs_adreno.so:system/vendor/lib64/librs_adreno.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/libRSDriver_adreno.so:system/vendor/lib64/libRSDriver_adreno.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/lib-rtpcommon.so:system/vendor/lib64/lib-rtpcommon.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/lib-rtpcore.so:system/vendor/lib64/lib-rtpcore.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/lib-rtpdaemoninterface.so:system/vendor/lib64/lib-rtpdaemoninterface.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/lib-rtpsl.so:system/vendor/lib64/lib-rtpsl.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/libscale.so:system/vendor/lib64/libscale.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/libsensor1.so:system/vendor/lib64/libsensor1.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/libsensor_reg.so:system/vendor/lib64/libsensor_reg.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/libsettings.so:system/vendor/lib64/libsettings.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/libsmemlog.so:system/vendor/lib64/libsmemlog.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/libssd.so:system/vendor/lib64/libssd.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/libsystem_health_mon.so:system/vendor/lib64/libsystem_health_mon.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/libthermalioctl.so:system/vendor/lib64/libthermalioctl.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/libTimeService.so:system/vendor/lib64/libTimeService.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/libuiblur.so:system/vendor/lib64/libuiblur.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/libulp2.so:system/vendor/lib64/libulp2.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/libvendorconn.so:system/vendor/lib64/libvendorconn.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/libvoice-svc.so:system/vendor/lib64/libvoice-svc.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/libwqe.so:system/vendor/lib64/libwqe.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/libxml.so:system/vendor/lib64/libxml.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/libxtadapter.so:system/vendor/lib64/libxtadapter.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/libxtwifi_ulp_adaptor.so:system/vendor/lib64/libxtwifi_ulp_adaptor.so \
+    vendor/nextbit/robin/proprietary/vendor/lib64/sensors.ssc.so:system/vendor/lib64/sensors.ssc.so \
     vendor/nextbit/robin/proprietary/vendor/lib/egl/eglSubDriverAndroid.so:system/vendor/lib/egl/eglSubDriverAndroid.so \
     vendor/nextbit/robin/proprietary/vendor/lib/egl/libEGL_adreno.so:system/vendor/lib/egl/libEGL_adreno.so \
     vendor/nextbit/robin/proprietary/vendor/lib/egl/libGLESv1_CM_adreno.so:system/vendor/lib/egl/libGLESv1_CM_adreno.so \
@@ -189,29 +311,21 @@ PRODUCT_COPY_FILES += \
     vendor/nextbit/robin/proprietary/vendor/lib/hw/flp.default.so:system/vendor/lib/hw/flp.default.so \
     vendor/nextbit/robin/proprietary/vendor/lib/hw/gatekeeper.msm8992.so:system/vendor/lib/hw/gatekeeper.msm8992.so \
     vendor/nextbit/robin/proprietary/vendor/lib/hw/keystore.msm8992.so:system/vendor/lib/hw/keystore.msm8992.so \
-    vendor/nextbit/robin/proprietary/vendor/lib/libC2D2.so:system/vendor/lib/libC2D2.so \
-    vendor/nextbit/robin/proprietary/vendor/lib/libCB.so:system/vendor/lib/libCB.so \
-    vendor/nextbit/robin/proprietary/vendor/lib/libI420colorconvert.so:system/vendor/lib/libI420colorconvert.so \
-    vendor/nextbit/robin/proprietary/vendor/lib/libOmxAacDec.so:system/vendor/lib/libOmxAacDec.so \
-    vendor/nextbit/robin/proprietary/vendor/lib/libOmxEvrcDec.so:system/vendor/lib/libOmxEvrcDec.so \
-    vendor/nextbit/robin/proprietary/vendor/lib/libOmxQcelp13Dec.so:system/vendor/lib/libOmxQcelp13Dec.so \
-    vendor/nextbit/robin/proprietary/vendor/lib/libQSEEComAPI.so:system/vendor/lib/libQSEEComAPI.so \
-    vendor/nextbit/robin/proprietary/vendor/lib/libRSDriver_adreno.so:system/vendor/lib/libRSDriver_adreno.so \
-    vendor/nextbit/robin/proprietary/vendor/lib/libSonyIMX230PdafLibrary.so:system/vendor/lib/libSonyIMX230PdafLibrary.so \
-    vendor/nextbit/robin/proprietary/vendor/lib/libTimeService.so:system/vendor/lib/libTimeService.so \
     vendor/nextbit/robin/proprietary/vendor/lib/libacdb-fts.so:system/vendor/lib/libacdb-fts.so \
     vendor/nextbit/robin/proprietary/vendor/lib/libacdbloader.so:system/vendor/lib/libacdbloader.so \
     vendor/nextbit/robin/proprietary/vendor/lib/libacdbrtac.so:system/vendor/lib/libacdbrtac.so \
-    vendor/nextbit/robin/proprietary/vendor/lib/libactuator_dw9761b.so:system/vendor/lib/libactuator_dw9761b.so \
     vendor/nextbit/robin/proprietary/vendor/lib/libactuator_dw9761b_camcorder.so:system/vendor/lib/libactuator_dw9761b_camcorder.so \
     vendor/nextbit/robin/proprietary/vendor/lib/libactuator_dw9761b_camera.so:system/vendor/lib/libactuator_dw9761b_camera.so \
+    vendor/nextbit/robin/proprietary/vendor/lib/libactuator_dw9761b.so:system/vendor/lib/libactuator_dw9761b.so \
     vendor/nextbit/robin/proprietary/vendor/lib/libadiertac.so:system/vendor/lib/libadiertac.so \
     vendor/nextbit/robin/proprietary/vendor/lib/libadreno_utils.so:system/vendor/lib/libadreno_utils.so \
     vendor/nextbit/robin/proprietary/vendor/lib/libadsprpc.so:system/vendor/lib/libadsprpc.so \
     vendor/nextbit/robin/proprietary/vendor/lib/libaudcal.so:system/vendor/lib/libaudcal.so \
     vendor/nextbit/robin/proprietary/vendor/lib/libbccQTI.so:system/vendor/lib/libbccQTI.so \
     vendor/nextbit/robin/proprietary/vendor/lib/libbtnv.so:system/vendor/lib/libbtnv.so \
+    vendor/nextbit/robin/proprietary/vendor/lib/libC2D2.so:system/vendor/lib/libC2D2.so \
     vendor/nextbit/robin/proprietary/vendor/lib/libc2d30-a4xx.so:system/vendor/lib/libc2d30-a4xx.so \
+    vendor/nextbit/robin/proprietary/vendor/lib/libCB.so:system/vendor/lib/libCB.so \
     vendor/nextbit/robin/proprietary/vendor/lib/libchromatix_s5k3m2xm_common.so:system/vendor/lib/libchromatix_s5k3m2xm_common.so \
     vendor/nextbit/robin/proprietary/vendor/lib/libchromatix_s5k3m2xm_cpp_hfr_120.so:system/vendor/lib/libchromatix_s5k3m2xm_cpp_hfr_120.so \
     vendor/nextbit/robin/proprietary/vendor/lib/libchromatix_s5k3m2xm_cpp_hfr_60.so:system/vendor/lib/libchromatix_s5k3m2xm_cpp_hfr_60.so \
@@ -240,9 +354,9 @@ PRODUCT_COPY_FILES += \
     vendor/nextbit/robin/proprietary/vendor/lib/libchromatix_s5k5e2_preview.so:system/vendor/lib/libchromatix_s5k5e2_preview.so \
     vendor/nextbit/robin/proprietary/vendor/lib/libchromatix_s5k5e2_snapshot.so:system/vendor/lib/libchromatix_s5k5e2_snapshot.so \
     vendor/nextbit/robin/proprietary/vendor/lib/libchromatix_s5k5e2_versions.so:system/vendor/lib/libchromatix_s5k5e2_versions.so \
-    vendor/nextbit/robin/proprietary/vendor/lib/libcne.so:system/vendor/lib/libcne.so \
     vendor/nextbit/robin/proprietary/vendor/lib/libcneapiclient.so:system/vendor/lib/libcneapiclient.so \
     vendor/nextbit/robin/proprietary/vendor/lib/libcneqmiutils.so:system/vendor/lib/libcneqmiutils.so \
+    vendor/nextbit/robin/proprietary/vendor/lib/libcne.so:system/vendor/lib/libcne.so \
     vendor/nextbit/robin/proprietary/vendor/lib/libconnctrl.so:system/vendor/lib/libconnctrl.so \
     vendor/nextbit/robin/proprietary/vendor/lib/libdataitems.so:system/vendor/lib/libdataitems.so \
     vendor/nextbit/robin/proprietary/vendor/lib/libdiag.so:system/vendor/lib/libdiag.so \
@@ -259,6 +373,7 @@ PRODUCT_COPY_FILES += \
     vendor/nextbit/robin/proprietary/vendor/lib/libflp.so:system/vendor/lib/libflp.so \
     vendor/nextbit/robin/proprietary/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
     vendor/nextbit/robin/proprietary/vendor/lib/libgsl.so:system/vendor/lib/libgsl.so \
+    vendor/nextbit/robin/proprietary/vendor/lib/libI420colorconvert.so:system/vendor/lib/libI420colorconvert.so \
     vendor/nextbit/robin/proprietary/vendor/lib/libidl.so:system/vendor/lib/libidl.so \
     vendor/nextbit/robin/proprietary/vendor/lib/libizat_core.so:system/vendor/lib/libizat_core.so \
     vendor/nextbit/robin/proprietary/vendor/lib/libjpegdhw.so:system/vendor/lib/libjpegdhw.so \
@@ -267,19 +382,18 @@ PRODUCT_COPY_FILES += \
     vendor/nextbit/robin/proprietary/vendor/lib/liblbs_core.so:system/vendor/lib/liblbs_core.so \
     vendor/nextbit/robin/proprietary/vendor/lib/libllvm-glnext.so:system/vendor/lib/libllvm-glnext.so \
     vendor/nextbit/robin/proprietary/vendor/lib/libllvm-qcom.so:system/vendor/lib/libllvm-qcom.so \
-    vendor/nextbit/robin/proprietary/vendor/lib/liblocationservice.so:system/vendor/lib/liblocationservice.so \
     vendor/nextbit/robin/proprietary/vendor/lib/liblocationservice_glue.so:system/vendor/lib/liblocationservice_glue.so \
+    vendor/nextbit/robin/proprietary/vendor/lib/liblocationservice.so:system/vendor/lib/liblocationservice.so \
     vendor/nextbit/robin/proprietary/vendor/lib/liblowi_client.so:system/vendor/lib/liblowi_client.so \
     vendor/nextbit/robin/proprietary/vendor/lib/liblqe.so:system/vendor/lib/liblqe.so \
     vendor/nextbit/robin/proprietary/vendor/lib/libmdmdetect.so:system/vendor/lib/libmdmdetect.so \
-    vendor/nextbit/robin/proprietary/vendor/lib/libmm-color-convertor.so:system/vendor/lib/libmm-color-convertor.so \
     vendor/nextbit/robin/proprietary/vendor/lib/libmmcamera2_c2d_module.so:system/vendor/lib/libmmcamera2_c2d_module.so \
     vendor/nextbit/robin/proprietary/vendor/lib/libmmcamera2_cpp_module.so:system/vendor/lib/libmmcamera2_cpp_module.so \
     vendor/nextbit/robin/proprietary/vendor/lib/libmmcamera2_frame_algorithm.so:system/vendor/lib/libmmcamera2_frame_algorithm.so \
     vendor/nextbit/robin/proprietary/vendor/lib/libmmcamera2_iface_modules.so:system/vendor/lib/libmmcamera2_iface_modules.so \
     vendor/nextbit/robin/proprietary/vendor/lib/libmmcamera2_imglib_modules.so:system/vendor/lib/libmmcamera2_imglib_modules.so \
-    vendor/nextbit/robin/proprietary/vendor/lib/libmmcamera2_is.so:system/vendor/lib/libmmcamera2_is.so \
     vendor/nextbit/robin/proprietary/vendor/lib/libmmcamera2_isp_modules.so:system/vendor/lib/libmmcamera2_isp_modules.so \
+    vendor/nextbit/robin/proprietary/vendor/lib/libmmcamera2_is.so:system/vendor/lib/libmmcamera2_is.so \
     vendor/nextbit/robin/proprietary/vendor/lib/libmmcamera2_pp_buf_mgr.so:system/vendor/lib/libmmcamera2_pp_buf_mgr.so \
     vendor/nextbit/robin/proprietary/vendor/lib/libmmcamera2_pproc_modules.so:system/vendor/lib/libmmcamera2_pproc_modules.so \
     vendor/nextbit/robin/proprietary/vendor/lib/libmmcamera2_q3a_core.so:system/vendor/lib/libmmcamera2_q3a_core.so \
@@ -330,16 +444,17 @@ PRODUCT_COPY_FILES += \
     vendor/nextbit/robin/proprietary/vendor/lib/libmmcamera_isp_sce40.so:system/vendor/lib/libmmcamera_isp_sce40.so \
     vendor/nextbit/robin/proprietary/vendor/lib/libmmcamera_isp_sub_module.so:system/vendor/lib/libmmcamera_isp_sub_module.so \
     vendor/nextbit/robin/proprietary/vendor/lib/libmmcamera_isp_wb40.so:system/vendor/lib/libmmcamera_isp_wb40.so \
-    vendor/nextbit/robin/proprietary/vendor/lib/libmmcamera_pdaf.so:system/vendor/lib/libmmcamera_pdaf.so \
     vendor/nextbit/robin/proprietary/vendor/lib/libmmcamera_pdafcamif.so:system/vendor/lib/libmmcamera_pdafcamif.so \
+    vendor/nextbit/robin/proprietary/vendor/lib/libmmcamera_pdaf.so:system/vendor/lib/libmmcamera_pdaf.so \
     vendor/nextbit/robin/proprietary/vendor/lib/libmmcamera_ppbase_module.so:system/vendor/lib/libmmcamera_ppbase_module.so \
     vendor/nextbit/robin/proprietary/vendor/lib/libmmcamera_s5k3m2xm.so:system/vendor/lib/libmmcamera_s5k3m2xm.so \
-    vendor/nextbit/robin/proprietary/vendor/lib/libmmcamera_s5k5e2.so:system/vendor/lib/libmmcamera_s5k5e2.so \
     vendor/nextbit/robin/proprietary/vendor/lib/libmmcamera_s5k5e2evt1.so:system/vendor/lib/libmmcamera_s5k5e2evt1.so \
+    vendor/nextbit/robin/proprietary/vendor/lib/libmmcamera_s5k5e2.so:system/vendor/lib/libmmcamera_s5k5e2.so \
     vendor/nextbit/robin/proprietary/vendor/lib/libmmcamera_tintless_algo.so:system/vendor/lib/libmmcamera_tintless_algo.so \
     vendor/nextbit/robin/proprietary/vendor/lib/libmmcamera_tintless_bg_pca_algo.so:system/vendor/lib/libmmcamera_tintless_bg_pca_algo.so \
     vendor/nextbit/robin/proprietary/vendor/lib/libmmcamera_tuning.so:system/vendor/lib/libmmcamera_tuning.so \
     vendor/nextbit/robin/proprietary/vendor/lib/libmmcamera_vpu_module.so:system/vendor/lib/libmmcamera_vpu_module.so \
+    vendor/nextbit/robin/proprietary/vendor/lib/libmm-color-convertor.so:system/vendor/lib/libmm-color-convertor.so \
     vendor/nextbit/robin/proprietary/vendor/lib/libmmipl.so:system/vendor/lib/libmmipl.so \
     vendor/nextbit/robin/proprietary/vendor/lib/libmmjpeg.so:system/vendor/lib/libmmjpeg.so \
     vendor/nextbit/robin/proprietary/vendor/lib/libmmosal.so:system/vendor/lib/libmmosal.so \
@@ -347,163 +462,48 @@ PRODUCT_COPY_FILES += \
     vendor/nextbit/robin/proprietary/vendor/lib/libmmqjpegdma.so:system/vendor/lib/libmmqjpegdma.so \
     vendor/nextbit/robin/proprietary/vendor/lib/liboemcamera.so:system/vendor/lib/liboemcamera.so \
     vendor/nextbit/robin/proprietary/vendor/lib/libois_lc898122.so:system/vendor/lib/libois_lc898122.so \
+    vendor/nextbit/robin/proprietary/vendor/lib/libOmxAacDec.so:system/vendor/lib/libOmxAacDec.so \
+    vendor/nextbit/robin/proprietary/vendor/lib/libOmxEvrcDec.so:system/vendor/lib/libOmxEvrcDec.so \
+    vendor/nextbit/robin/proprietary/vendor/lib/libOmxQcelp13Dec.so:system/vendor/lib/libOmxQcelp13Dec.so \
     vendor/nextbit/robin/proprietary/vendor/lib/libperipheral_client.so:system/vendor/lib/libperipheral_client.so \
     vendor/nextbit/robin/proprietary/vendor/lib/libqcci_legacy.so:system/vendor/lib/libqcci_legacy.so \
     vendor/nextbit/robin/proprietary/vendor/lib/libqdi.so:system/vendor/lib/libqdi.so \
     vendor/nextbit/robin/proprietary/vendor/lib/libqdp.so:system/vendor/lib/libqdp.so \
-    vendor/nextbit/robin/proprietary/vendor/lib/libqmi.so:system/vendor/lib/libqmi.so \
     vendor/nextbit/robin/proprietary/vendor/lib/libqmi_cci.so:system/vendor/lib/libqmi_cci.so \
     vendor/nextbit/robin/proprietary/vendor/lib/libqmi_client_helper.so:system/vendor/lib/libqmi_client_helper.so \
     vendor/nextbit/robin/proprietary/vendor/lib/libqmi_client_qmux.so:system/vendor/lib/libqmi_client_qmux.so \
     vendor/nextbit/robin/proprietary/vendor/lib/libqmi_common_so.so:system/vendor/lib/libqmi_common_so.so \
     vendor/nextbit/robin/proprietary/vendor/lib/libqmi_csi.so:system/vendor/lib/libqmi_csi.so \
     vendor/nextbit/robin/proprietary/vendor/lib/libqmi_encdec.so:system/vendor/lib/libqmi_encdec.so \
+    vendor/nextbit/robin/proprietary/vendor/lib/libqmi.so:system/vendor/lib/libqmi.so \
     vendor/nextbit/robin/proprietary/vendor/lib/libqomx_jpegdec.so:system/vendor/lib/libqomx_jpegdec.so \
-    vendor/nextbit/robin/proprietary/vendor/lib/libqomx_jpegenc.so:system/vendor/lib/libqomx_jpegenc.so \
     vendor/nextbit/robin/proprietary/vendor/lib/libqomx_jpegenc_pipe.so:system/vendor/lib/libqomx_jpegenc_pipe.so \
+    vendor/nextbit/robin/proprietary/vendor/lib/libqomx_jpegenc.so:system/vendor/lib/libqomx_jpegenc.so \
+    vendor/nextbit/robin/proprietary/vendor/lib/libQSEEComAPI.so:system/vendor/lib/libQSEEComAPI.so \
     vendor/nextbit/robin/proprietary/vendor/lib/libqti-perfd-client.so:system/vendor/lib/libqti-perfd-client.so \
     vendor/nextbit/robin/proprietary/vendor/lib/libquipc_os_api.so:system/vendor/lib/libquipc_os_api.so \
-    vendor/nextbit/robin/proprietary/vendor/lib/librs_adreno.so:system/vendor/lib/librs_adreno.so \
     vendor/nextbit/robin/proprietary/vendor/lib/librs_adreno_sha1.so:system/vendor/lib/librs_adreno_sha1.so \
+    vendor/nextbit/robin/proprietary/vendor/lib/librs_adreno.so:system/vendor/lib/librs_adreno.so \
+    vendor/nextbit/robin/proprietary/vendor/lib/libRSDriver_adreno.so:system/vendor/lib/libRSDriver_adreno.so \
     vendor/nextbit/robin/proprietary/vendor/lib/libscale.so:system/vendor/lib/libscale.so \
     vendor/nextbit/robin/proprietary/vendor/lib/libsensor1.so:system/vendor/lib/libsensor1.so \
     vendor/nextbit/robin/proprietary/vendor/lib/libsensor_reg.so:system/vendor/lib/libsensor_reg.so \
     vendor/nextbit/robin/proprietary/vendor/lib/libsmemlog.so:system/vendor/lib/libsmemlog.so \
+    vendor/nextbit/robin/proprietary/vendor/lib/libSonyIMX230PdafLibrary.so:system/vendor/lib/libSonyIMX230PdafLibrary.so \
+    vendor/nextbit/robin/proprietary/vendor/lib/libTimeService.so:system/vendor/lib/libTimeService.so \
     vendor/nextbit/robin/proprietary/vendor/lib/libulp2.so:system/vendor/lib/libulp2.so \
     vendor/nextbit/robin/proprietary/vendor/lib/libvendorconn.so:system/vendor/lib/libvendorconn.so \
     vendor/nextbit/robin/proprietary/vendor/lib/libwqe.so:system/vendor/lib/libwqe.so \
     vendor/nextbit/robin/proprietary/vendor/lib/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so \
     vendor/nextbit/robin/proprietary/vendor/lib/libxml.so:system/vendor/lib/libxml.so \
-    vendor/nextbit/robin/proprietary/vendor/lib/libxt_native.so:system/vendor/lib/libxt_native.so \
     vendor/nextbit/robin/proprietary/vendor/lib/libxtadapter.so:system/vendor/lib/libxtadapter.so \
+    vendor/nextbit/robin/proprietary/vendor/lib/libxt_native.so:system/vendor/lib/libxt_native.so \
     vendor/nextbit/robin/proprietary/vendor/lib/libxtwifi_ulp_adaptor.so:system/vendor/lib/libxtwifi_ulp_adaptor.so \
     vendor/nextbit/robin/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
     vendor/nextbit/robin/proprietary/vendor/lib/sensors.ssc.so:system/vendor/lib/sensors.ssc.so \
     vendor/nextbit/robin/proprietary/vendor/lib/soundfx/libqcbassboost.so:system/vendor/lib/soundfx/libqcbassboost.so \
     vendor/nextbit/robin/proprietary/vendor/lib/soundfx/libqcreverb.so:system/vendor/lib/soundfx/libqcreverb.so \
     vendor/nextbit/robin/proprietary/vendor/lib/soundfx/libqcvirt.so:system/vendor/lib/soundfx/libqcvirt.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/egl/eglSubDriverAndroid.so:system/vendor/lib64/egl/eglSubDriverAndroid.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/egl/libEGL_adreno.so:system/vendor/lib64/egl/libEGL_adreno.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/egl/libGLESv1_CM_adreno.so:system/vendor/lib64/egl/libGLESv1_CM_adreno.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/egl/libGLESv2_adreno.so:system/vendor/lib64/egl/libGLESv2_adreno.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/egl/libq3dtools_adreno.so:system/vendor/lib64/egl/libq3dtools_adreno.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/hw/activity_recognition.msm8992.so:system/vendor/lib64/hw/activity_recognition.msm8992.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/hw/flp.default.so:system/vendor/lib64/hw/flp.default.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/hw/gatekeeper.msm8992.so:system/vendor/lib64/hw/gatekeeper.msm8992.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/hw/keystore.msm8992.so:system/vendor/lib64/hw/keystore.msm8992.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/lib-dplmedia.so:system/vendor/lib64/lib-dplmedia.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/lib-ims-rcscmjni.so:system/vendor/lib64/lib-ims-rcscmjni.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/lib-imsSDP.so:system/vendor/lib64/lib-imsSDP.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/lib-imscamera.so:system/vendor/lib64/lib-imscamera.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/lib-imsdpl.so:system/vendor/lib64/lib-imsdpl.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/lib-imsqimf.so:system/vendor/lib64/lib-imsqimf.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/lib-imsrcs.so:system/vendor/lib64/lib-imsrcs.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/lib-imsrcscm.so:system/vendor/lib64/lib-imsrcscm.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/lib-imsrcscmclient.so:system/vendor/lib64/lib-imsrcscmclient.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/lib-imsrcscmservice.so:system/vendor/lib64/lib-imsrcscmservice.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/lib-imss.so:system/vendor/lib64/lib-imss.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/lib-imsvt.so:system/vendor/lib64/lib-imsvt.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/lib-imsxml.so:system/vendor/lib64/lib-imsxml.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/lib-rcsimssjni.so:system/vendor/lib64/lib-rcsimssjni.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/lib-rtpcommon.so:system/vendor/lib64/lib-rtpcommon.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/lib-rtpcore.so:system/vendor/lib64/lib-rtpcore.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/lib-rtpdaemoninterface.so:system/vendor/lib64/lib-rtpdaemoninterface.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/lib-rtpsl.so:system/vendor/lib64/lib-rtpsl.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/libC2D2.so:system/vendor/lib64/libC2D2.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/libCB.so:system/vendor/lib64/libCB.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/libQSEEComAPI.so:system/vendor/lib64/libQSEEComAPI.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/libQtiTether.so:system/vendor/lib64/libQtiTether.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/libRSDriver_adreno.so:system/vendor/lib64/libRSDriver_adreno.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/libTimeService.so:system/vendor/lib64/libTimeService.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/libacdb-fts.so:system/vendor/lib64/libacdb-fts.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/libacdbloader.so:system/vendor/lib64/libacdbloader.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/libacdbrtac.so:system/vendor/lib64/libacdbrtac.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/libadiertac.so:system/vendor/lib64/libadiertac.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/libadreno_utils.so:system/vendor/lib64/libadreno_utils.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/libadsprpc.so:system/vendor/lib64/libadsprpc.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/libalarmservice_jni.so:system/vendor/lib64/libalarmservice_jni.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/libaudcal.so:system/vendor/lib64/libaudcal.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/libbccQTI.so:system/vendor/lib64/libbccQTI.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/libbtnv.so:system/vendor/lib64/libbtnv.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/libc2d30-a4xx.so:system/vendor/lib64/libc2d30-a4xx.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/libcne.so:system/vendor/lib64/libcne.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/libcneapiclient.so:system/vendor/lib64/libcneapiclient.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/libcneqmiutils.so:system/vendor/lib64/libcneqmiutils.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/libconfigdb.so:system/vendor/lib64/libconfigdb.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/libconnctrl.so:system/vendor/lib64/libconnctrl.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/libdataitems.so:system/vendor/lib64/libdataitems.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/libdiag.so:system/vendor/lib64/libdiag.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/libdisp-aba.so:system/vendor/lib64/libdisp-aba.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/libdpmctmgr.so:system/vendor/lib64/libdpmctmgr.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/libdpmfdmgr.so:system/vendor/lib64/libdpmfdmgr.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/libdpmframework.so:system/vendor/lib64/libdpmframework.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/libdpmnsrm.so:system/vendor/lib64/libdpmnsrm.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/libdpmtcm.so:system/vendor/lib64/libdpmtcm.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/libdrmfs.so:system/vendor/lib64/libdrmfs.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/libdrmtime.so:system/vendor/lib64/libdrmtime.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/libdsi_netctrl.so:system/vendor/lib64/libdsi_netctrl.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/libdsutils.so:system/vendor/lib64/libdsutils.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/libflp.so:system/vendor/lib64/libflp.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/libgeofence.so:system/vendor/lib64/libgeofence.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/libgsl.so:system/vendor/lib64/libgsl.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/libidl.so:system/vendor/lib64/libidl.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/libimscamera_jni.so:system/vendor/lib64/libimscamera_jni.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/libimsmedia_jni.so:system/vendor/lib64/libimsmedia_jni.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/libizat_core.so:system/vendor/lib64/libizat_core.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/liblbs_core.so:system/vendor/lib64/liblbs_core.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/libllvm-glnext.so:system/vendor/lib64/libllvm-glnext.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/libllvm-qcom.so:system/vendor/lib64/libllvm-qcom.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/liblocationservice.so:system/vendor/lib64/liblocationservice.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/liblocationservice_glue.so:system/vendor/lib64/liblocationservice_glue.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/liblowi_client.so:system/vendor/lib64/liblowi_client.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/liblowi_wifihal.so:system/vendor/lib64/liblowi_wifihal.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/liblqe.so:system/vendor/lib64/liblqe.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/libmdmdetect.so:system/vendor/lib64/libmdmdetect.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/libmm-abl-oem.so:system/vendor/lib64/libmm-abl-oem.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/libmm-abl.so:system/vendor/lib64/libmm-abl.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/libmm-als.so:system/vendor/lib64/libmm-als.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/libmm-qdcm.so:system/vendor/lib64/libmm-qdcm.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/libnetmgr.so:system/vendor/lib64/libnetmgr.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/libperipheral_client.so:system/vendor/lib64/libperipheral_client.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/libqcci_legacy.so:system/vendor/lib64/libqcci_legacy.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/libqcmaputils.so:system/vendor/lib64/libqcmaputils.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/libqdi.so:system/vendor/lib64/libqdi.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/libqdp.so:system/vendor/lib64/libqdp.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/libqmi.so:system/vendor/lib64/libqmi.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/libqmi_cci.so:system/vendor/lib64/libqmi_cci.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/libqmi_client_helper.so:system/vendor/lib64/libqmi_client_helper.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/libqmi_client_qmux.so:system/vendor/lib64/libqmi_client_qmux.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/libqmi_common_so.so:system/vendor/lib64/libqmi_common_so.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/libqmi_csi.so:system/vendor/lib64/libqmi_csi.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/libqmi_encdec.so:system/vendor/lib64/libqmi_encdec.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/libqti-perfd-client.so:system/vendor/lib64/libqti-perfd-client.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/libquipc_os_api.so:system/vendor/lib64/libquipc_os_api.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/librcc.so:system/vendor/lib64/librcc.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/libril-qc-ltedirectdisc.so:system/vendor/lib64/libril-qc-ltedirectdisc.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/libril-qc-qmi-1.so:system/vendor/lib64/libril-qc-qmi-1.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/libril-qc-radioconfig.so:system/vendor/lib64/libril-qc-radioconfig.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/libril-qcril-hook-oem.so:system/vendor/lib64/libril-qcril-hook-oem.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/librilqmiservices.so:system/vendor/lib64/librilqmiservices.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/librpmb.so:system/vendor/lib64/librpmb.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/librs_adreno.so:system/vendor/lib64/librs_adreno.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/librs_adreno_sha1.so:system/vendor/lib64/librs_adreno_sha1.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/libscale.so:system/vendor/lib64/libscale.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/libsensor1.so:system/vendor/lib64/libsensor1.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/libsensor_reg.so:system/vendor/lib64/libsensor_reg.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/libsettings.so:system/vendor/lib64/libsettings.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/libsmemlog.so:system/vendor/lib64/libsmemlog.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/libssd.so:system/vendor/lib64/libssd.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/libsystem_health_mon.so:system/vendor/lib64/libsystem_health_mon.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/libthermalioctl.so:system/vendor/lib64/libthermalioctl.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/libuiblur.so:system/vendor/lib64/libuiblur.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/libulp2.so:system/vendor/lib64/libulp2.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/libvendorconn.so:system/vendor/lib64/libvendorconn.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/libvoice-svc.so:system/vendor/lib64/libvoice-svc.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/libwqe.so:system/vendor/lib64/libwqe.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/libxml.so:system/vendor/lib64/libxml.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/libxtadapter.so:system/vendor/lib64/libxtadapter.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/libxtwifi_ulp_adaptor.so:system/vendor/lib64/libxtwifi_ulp_adaptor.so \
-    vendor/nextbit/robin/proprietary/vendor/lib64/sensors.ssc.so:system/vendor/lib64/sensors.ssc.so \
     vendor/nextbit/robin/proprietary/vendor/qcril.db:system/vendor/qcril.db
 
 PRODUCT_PACKAGES += \
@@ -514,15 +514,15 @@ PRODUCT_PACKAGES += \
     libqmiservices \
     libthermalclient \
     libtime_genoff \
-    TimeService \
     datastatusnotification \
     fastdormancy \
     shutdownlistener \
+    TimeService \
     CNEService \
-    QtiTetherService \
     com.qualcomm.location \
     dpmserviceapp \
     qcrilmsgtunnel \
+    QtiTetherService \
     ims \
     imssettings \
     qcnvitems \
