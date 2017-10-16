@@ -526,4 +526,7 @@ PRODUCT_PACKAGES += \
     ims \
     imssettings \
     qcnvitems \
-    qcrilhook
+    qcrilhook \
+    qti-telephony-common \
+    QtiTelephonyServicelibrary \
+    tcmclient
