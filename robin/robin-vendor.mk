@@ -529,4 +529,5 @@ PRODUCT_PACKAGES += \
     qcrilhook \
     qti-telephony-common \
     QtiTelephonyServicelibrary \
-    tcmclient
+    tcmclient \
+    SimSettings

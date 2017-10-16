@@ -462,6 +462,7 @@ vendor/lib64/libsmemlog.so
 -app/datastatusnotification/datastatusnotification.apk
 -app/fastdormancy/fastdormancy.apk
 -app/shutdownlistener/shutdownlistener.apk
+-app/SimSettings/SimSettings.apk
 bin/ipacm-diag
 bin/netmgrd
 bin/qmuxd
