@@ -400,9 +400,13 @@ vendor/firmware/libpn547_fw.so
 # Perf
 bin/energy-awareness
 bin/msm_irqbalance
+etc/permissions/com.qualcomm.qti.Performance.xml
+-framework/QPerformance.jar
 vendor/bin/perfd
 vendor/lib/libqti-perfd-client.so
+vendor/lib/libqti_performance.so
 vendor/lib64/libqti-perfd-client.so
+vendor/lib64/libqti_performance.so
 vendor/etc/perf-profile0.conf
 vendor/etc/perf-profile1.conf
 vendor/etc/perf-profile2.conf
